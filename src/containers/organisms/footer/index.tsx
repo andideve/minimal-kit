@@ -20,7 +20,7 @@ const Root = styled.footer`
       border-top: 1px solid var(--color-system-separator);
     }
     .IconButtonList {
-      margin: -0.75rem;
+      margin: calc(-0.75rem + 0.125rem) -0.75rem;
     }
     .Nav,
     .IconButtonList {

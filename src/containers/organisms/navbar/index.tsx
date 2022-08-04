@@ -26,6 +26,7 @@ import SVGGitHub from '../../../components/atoms/icons/GitHub';
 import { UI } from '../../../config/globals';
 
 const Nav = styled.nav`
+  --spacing: 3rem;
   position: fixed;
   top: 0;
   right: 0;
@@ -35,9 +36,11 @@ const Nav = styled.nav`
   border-bottom: 1px solid var(--color-system-separator);
   background-color: var(--color-system-background);
   z-index: 999;
-  .Nav__NavigationMenu,
+  .Nav__NavigationMenu {
+    margin: 0 var(--spacing);
+  }
   .Nav__IconButtonList {
-    margin: 0 3rem;
+    margin: 0 calc(-0.75rem + var(--spacing));
   }
   ${media('lg')} {
     .Nav__IconButtonList {
